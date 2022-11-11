@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="bodyContainer">
+        <div class="header">
+            <h3>WILSON DAGAH | FRONTEND DEV</h3>
+        </div>
+
+        <div class="mainContainer">
+            <div class="bill">
+                <label for="">Bill Total</label>
+                <input type="text" id="billTotalInput" class="billTotalInput" placeholder="100.00" onkeyup="calculateBill()">
+            </div>
+            <div class="tip">
+                <label for="">Tip</label>
+                <input type="text" name="" id="tipInput" class="tipInput" placeholder="10" onkeyup="calculateBill()">
+            </div>
+            <label for="">People</label>
+            <div class="row">
+                <div class="peopleIncrement">
+                    <button class="decrease" id="decrease" onclick="decreasePeople()" onkeyup="calculateBill()">-</button>
+                    <span style="text-align: center;" class="numOfPeople" id="numberOfPeople">1</span>
+                    <button class="increment" id="increment" onclick="increasePeople()" onkeyup="calculateBill()">+</button>
+                </div>
+                <div class="totalBillDiv">
+                    <label>
+                        Total Per Person
+                    </label>
+                    <div class="perPersonTotal amount" id="perPTotal">
+                        $0
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h3>
+                TIP CALCULATOR
+            </h3>
+        </div>
+    </div>
+</body>
+<script src="./control.js">
+</script>
+</html>
