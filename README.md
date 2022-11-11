@@ -8,5 +8,5 @@
 
 ## Links
 
-- Solution URL: [Code on Github]()
-- Live Site URL: ()
+- Solution URL: [Code on Github](git@github.com:DevGuyWilly/TIP-CALCULATOR.git)
+- Live Site URL: (https://devguywilly.github.io/TIP-CALCULATOR/)
